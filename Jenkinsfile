@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-		    git 'https://github.com/PotdarDatta/Simplilearn.git'
+		    git 'https://github.com/PotdarDatta/GitDemo.git'
      
                   sh "./mvnw compile"	
                 echo 'Buiding the project with maven compile'
