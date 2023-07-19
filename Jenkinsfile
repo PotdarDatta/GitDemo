@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-		    git 'https://github.com/PotdarDatta/GitDemo.git'
+		    
      
                   bat "./mvn clean install"	
                 echo 'Buiding the project with maven compile'
