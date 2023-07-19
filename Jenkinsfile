@@ -6,14 +6,14 @@ pipeline {
             steps {
 		    git 'https://github.com/PotdarDatta/GitDemo.git'
      
-                  bat "./mvnw compile"	
+                  bat "./mvn clean install"	
                 echo 'Buiding the project with maven compile'
             }
         }
         stage('Test') {
             steps {
 
-		bat "./mvnw test"	
+		bat "./mvn test"	
                 echo 'testing the project with maven'
             }
         }
